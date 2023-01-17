@@ -1,0 +1,17 @@
+17/01/2023
+
+/*
+Q.01: Como é possivel guardar o valor digitado em um prompt() dentro de uma variável?
+Faz uma variável receber o prompt (sua string). Mesmo que você digite um número, o prompt vai tratar como uma string.
+
+
+Q.02: Como fazer com que um número digitado em um prompt() possa ser usado em cálculo?
+Conversão de string para número:
+Number.parseInt(n)//Número inteiro
+Number.parseFloat(n)//Número Real
+
+Q.03: Como transformar um texto todo para letras MAIÚSCULAS?
+
+Q.04: Como mostrar um número formatado como um valor monetário?
+*/
+
