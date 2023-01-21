@@ -11,7 +11,9 @@ Number.parseInt(n)//Número inteiro
 Number.parseFloat(n)//Número Real
 
 Q.03: Como transformar um texto todo para letras MAIÚSCULAS?
+Anotação feita no caderno
 
 Q.04: Como mostrar um número formatado como um valor monetário?
+Anotação feita no caderno.
 */
 
