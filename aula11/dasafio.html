@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4" />
+    <title>Nacionalidade</title>
+    <style>
+        body, main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            background: 
+            url(img/jeremy-thomas-space.jpg)/* image */ 
+            top center / cover /* position / size */ 
+            no-repeat/* repeat */ 
+            fixed/* attachment */ 
+            rgb(32, 16, 172);/* color */
+
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 2px 1px rgba(0, 0, 0, 0.705);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Nacionalidade: Qual o seu país?</h1>
+        <p>
+            <input type="text" name="txtnac" id="txtnac">
+            <input type="button" value="verificar" onclick="confirmar()">
+        </p>
+        <div id="res"></div>
+    </main>
+
+    <script>
+        function confirmar() {
+            var txtn = window.document.querySelector('input#txtnac')
+            var res = window.document.querySelector('div#res')
+            var nac = txtn.value
+            res.innerHTML = `Seu país de origem é: ${nac}`
+
+            if (nac == "Brasil" || nac == "brasil") {
+                res.innerHTML += `<P>Você é Brasileiro!</p>`
+            } else {
+                res.innerHTML += `<p>Você é ESTRANGERO!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
