@@ -40,11 +40,11 @@
 
     <script>
         function confirmar() {
-            var txtn = window.document.querySelector('input#txtnac')
-            var res = window.document.querySelector('div#res')
-            var nac = txtn.value
-            res.innerHTML = `Seu país de origem é: ${nac}`
+            var txtn = window.document.querySelector('input#txtnac') // O input para escrever o país
+            var res = window.document.querySelector('div#res')//aparecera a mensagem na tela
+            var nac = txtn.value // nac vai receber o valor que foi digitado no input
 
+            res.innerHTML = `Seu país de origem é: ${nac}`
             if (nac == "Brasil" || nac == "brasil") {
                 res.innerHTML += `<P>Você é Brasileiro!</p>`
             } else {
